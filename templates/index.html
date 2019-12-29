@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>PlanetPlace</title>
+    <title>Document</title>
 
     <link rel="stylesheet" href="../static/styles/style.css">
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script>
         $(document).ready(function(){
@@ -18,32 +17,39 @@
         </script>
 </head>
 <body>
-    <div class="container">
-        <div class="head">
-            <div class="navbar">
-                <div class="logo">
-                    <img src="../static/images/icon.png" alt="icon">
+    <div id="content" class="bg-svg"></div>  
+    <div class="head">
+        <header class="header">
+            <a href="#" class="header-logo">
+                <img src="../static/images/icon.png"  alt="">
+            </a>
+    
+            <nav class="header-nav">
+                <a href="#" class="header-nav__link">Info</a>
+                <a href="#" class="header-nav__link">Map</a>
+            </nav>
+    
+            <div class="header-singin">
+                <div class="header-singin-login">
+                    <a href="" class="header-login-logo">
+                        <img src="../static/images/avatar.png" style="width: 80%; height: auto;" alt="">
+                    </a>
                 </div>
 
-                <div class="singin">
-                    <img src="../static/images/avatar.png" alt="">
+                <div class="header-singin-singin">
+                    <a href="" class="header-singin-logo">
+                        <img src="../static/images/singin.png" style="width: 80%; height: auto;"  alt="">
+                    </a>
                 </div>
-
-                <div class="menu">
-                    <div class="info">
-                        <a href="#info" class="menu-item">info</a>
-                    </div>
-                    <div class="map">
-                        <a href="#map" class="menu-item">map</a>
-                    </div>
-                </div>
-                
             </div>
-            <div id="content"></div>    
-        </div>
-        
+    
+            <div class="header-text">
+                <h1 class="header-title">Step up to the stars</h1>
+                <span class="header-subtitle">Discover the world around you</span>
+            </div>
+        </header>
     </div>
-
-  
+    
+      
 </body>
 </html>
