@@ -1,0 +1,64 @@
+*{
+    font-family: Roboto sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.main{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 4fr 8fr 2fr;
+    grid-template-rows: 4fr 6fr;
+    grid-template-areas: "planet-image planet-title planet-change";
+    justify-items: center;
+    align-items: center;
+}
+
+.planet-image{
+    grid-area: planet-image;
+}
+
+
+
+.planet-title{
+    grid-area: planet-title;
+    font-size: 30px;
+}
+.planet-title h2{
+    text-align: center;
+    font-size: 48px;
+    padding-bottom: 40px;
+}
+
+
+.planet-change{
+    grid-area: planet-change;
+}
+.select-planet{
+    text-align: center;
+    font-size: 36px;
+    width: 200px;
+    height: 60px;
+    border: none;
+    border-radius: 1000px;
+    color: white;
+    background-color:rgba(39, 9, 65, 1) ;
+    margin-bottom: 20px;
+}
+.confirm-button{
+    font-size: 36px;
+    width: 200px;
+    height: 60px;
+    border: none;
+    border-radius: 1000px;
+    color: white;
+    background-color:rgba(39, 9, 65, 1) ;
+    
+}
+
+.planet-all-info{
+    grid-column: 1/4;
+    font-size: 30px;
+}

@@ -6,50 +6,54 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 
-    <link rel="stylesheet" href="../static/styles/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script>
-        $(document).ready(function(){
-           
-           $('#content').load("main_image.html");
-        
-        });
-        </script>
+    <link rel="stylesheet" href="../static/styles/style.css">
 </head>
-<body>
-    <div id="content" class="bg-svg"></div>  
-    <div class="head">
-        <header class="header">
-            <a href="#" class="header-logo">
-                <img src="../static/images/icon.png"  alt="">
-            </a>
-    
-            <nav class="header-nav">
-                <a href="#" class="header-nav__link">Info</a>
-                <a href="#" class="header-nav__link">Map</a>
-            </nav>
-    
-            <div class="header-singin">
-                <div class="header-singin-login">
-                    <a href="" class="header-login-logo">
-                        <img src="../static/images/avatar.png" style="width: 80%; height: auto;" alt="">
-                    </a>
-                </div>
 
-                <div class="header-singin-singin">
-                    <a href="" class="header-singin-logo">
-                        <img src="../static/images/singin.png" style="width: 80%; height: auto;"  alt="">
+<body>
+    <div class="conteiner">
+        <div class="head">
+            <div class="head-logo">
+                <img src="../static/images/icon.png" alt="">
+            </div>
+            <div class="head-nav">
+                <a href="#info">Info</a>
+                <a href="#">Map</a>
+            </div>
+            <div class="head-profile">
+                <div class="head-login">
+                    <a href="#">
+                        <img src="../static/images/avatar.png" alt="login image">
+                    </a>
+                </div>
+                <div class="head-singin">
+                    <a href="#">
+                        <img src="../static/images/singin.png" alt="singin image">
                     </a>
                 </div>
             </div>
-    
-            <div class="header-text">
-                <h1 class="header-title">Step up to the stars</h1>
-                <span class="header-subtitle">Discover the world around you</span>
+            <div class="head-text">
+                <h1>Step up to the stars</h1>
+                <p>Discover the world around you</p>
             </div>
-        </header>
+        </div>
     </div>
-    
-      
+    <div class="content">
+        <div class="info" id="info">
+            
+        </div>
+    </div>
+    <div class="map">
+        
+    </div>
 </body>
+
+<script>
+    $(document).ready(function(){
+       
+       $('.info').load("infoforguest.html");
+    
+    });
+</script>
+
 </html>
