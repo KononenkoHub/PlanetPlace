@@ -1,0 +1,15 @@
+<svg id="Шар_1" data-name="Шар 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1012.36">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #270941;
+      }
+    </style>
+  </defs>
+  <title>beg</title>
+  <g>
+    <path class="cls-1" d="M1765.45,1012.36h24.23A130.32,130.32,0,0,1,1920,882.05V857.81A154.55,154.55,0,0,0,1765.45,1012.36Z" transform="translate(0 0)"/>
+    <path class="cls-1" d="M1672.07,1012.36h33c0-118.7,96.23-214.93,214.93-214.93v-33C1783.07,764.44,1672.07,875.44,1672.07,1012.36Z" transform="translate(0 0)"/>
+    <path class="cls-1" d="M1920,667.58V0H0V1012.36H1575.21C1575.21,821.94,1729.58,667.58,1920,667.58Z" transform="translate(0 0)"/>
+  </g>
+</svg>

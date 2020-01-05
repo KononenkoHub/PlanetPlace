@@ -11,6 +11,19 @@ html{
   width: 100%;
 }
 
+
+::-webkit-scrollbar{
+  width: 13px;
+}
+::-webkit-scrollbar-thumb{
+   background: linear-gradient(transparent, #ff1100); 
+   border-radius: 100px;
+ 
+}
+::-webkit-scrollbar-track-piece{
+  background-color: #270941;
+  border: none;
+}
 /*------------------head------------------*/
 .head {
   align-items: center;
@@ -95,6 +108,65 @@ html{
 }
 
 
+@media screen and (max-width: 1150px){
+  .head {
+    grid-template-areas: "head-logo head-nav head-profile" ". head-text .";
+    grid-template-columns: 2fr 5fr 0.5fr;
+    grid-template-rows: 2fr 10fr 3fr;
+    width: 100%;
+    height: 100%;
+  }
+  .head-nav a{
+    font-size: 20px;
+    padding-right: 60px;
+  }
+}
+
+@media screen and (max-width: 950px){
+  .head {
+    grid-template-areas: "head-logo head-nav head-profile" ". head-text .";
+    grid-template-columns: 5fr 2fr 0.5fr;
+    grid-template-rows: 2fr 10fr 3fr;
+    width: 100%;
+    height: 100%;
+  }
+  .head-logo{
+    justify-self: start;
+  }
+  .head-logo img {
+    display: inline-block;
+    padding-left: 20px;
+    width: 50%;
+  }
+  .head-nav a{
+    font-size: 20px;
+    padding-right: 20px;
+  }
+}
+@media screen and (max-width: 580px){
+  .head {
+    background-image: url(/static/images/Header.svg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    grid-template-areas: "head-logo head-nav head-profile" ". head-text .";
+    grid-template-columns: 2fr 6fr 2fr;
+    grid-template-rows: 2fr 10fr;
+    width: 100%;
+    height: 100%;
+  }
+  .head-logo img{
+    width: 130%;
+  }
+  .head-nav{
+    text-align: center;
+  }
+  .head-text{
+    text-align: center;
+  }
+  .head-text h1{
+    font-size: 30px;
+  }
+}
 /*------------------info block/*------------------*/
 
 .info{
@@ -107,14 +179,19 @@ html{
   .info{
     height: 200vh;
   }
-  @media screen and (max-width: 600px){
-    .info{
-      height: 300vh;
-    }
+}
+@media screen and (max-width: 600px){
+  .info{
+    height: 300vh;
+  }
+}
 /*------------------map------------------*/
 
 .map{
   width: 100%;
   height: 100vh;
-  background-image: url(../images/beg.png);
+  background-image: url(../images/beg\ .png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
