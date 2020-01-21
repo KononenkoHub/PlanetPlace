@@ -7,14 +7,16 @@
     <title>Document</title>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="../static/styles/style.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/styles.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/planets.css')}}">
+    <script src="{{url_for('static', filename='scripts/scripts.js')}}"></script>
 </head>
 
 <body>
     <div class="conteiner">
         <div class="head">
             <div class="head-logo">
-                <img src="../static/images/icon.png" alt="icon">
+                <img src="{{url_for('static', filename='images/icon.png')}}" alt="icon">
             </div>
             <div class="head-nav">
                 <a href="#info">Info</a>
@@ -22,13 +24,13 @@
             </div>
             <div class="head-profile">
                 <div class="head-login">
-                    <a href="#">
-                        <img src="../static/images/avatar.png" alt="login image">
+                    <a href="{{url_for('login')}}">
+                        <img src="{{url_for('static', filename='images/avatar.png')}}" alt="login image">
                     </a>
                 </div>
                 <div class="head-singin">
-                    <a href="#">
-                        <img src="../static/images/singin.png" alt="singin image">
+                    <a href="{{url_for('registration')}}">
+                        <img src="{{url_for('static', filename='images/singin.png')}}" alt="singin image">
                     </a>
                 </div>
             </div>
@@ -44,15 +46,51 @@
         </div>
     </div>
     <div class="map" id="map">
+        <div id="SolarSystem">
+            <div id="neptune"></div>
+            <div id="uranus"></div>
+            <div id="saturn"></div>
+            <div id="jupiter"></div>
+            <div id="mars"></div>
+            <div id="earth"></div>
+            <div id="venus"></div>
+            <div id="mercury"></div>
+            <div id="sun"></div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-about">
+            <h3>About</h3>
+        </div>
+        <div class="footer-contact">
+            <h3>Contacts</h3>
+        </div>
+        <div class="footer-about-info">
+            <p>A site created for educational purposes and the information provided on it may not be correct</p>
+        </div>
+        <div class="footer-contacts">
+            <ol>
+                <ul>Telegram - @ole9kononenko</ul>
+                <ul>GMail - olehkon09@gmail.com</ul>
+                <ul>GitHub - <a href="https://github.com/KononenkoHub/">KononenkoHub</a></ul>
+            </ol>
+        </div>
     </div>
 </body>
-
-<script>
-    $(document).ready(function(){
-       
-       $('.info').load("infoforguest.html");
-    
-    });
-</script>
+    {%if user_authenticated%}
+    <script>     
+        $(document).ready(function(){
+            $('.info').load("/infoforusers");
+            
+            });
+    </script>
+    {%else%}
+    <script>     
+        $(document).ready(function(){
+            $('.info').load("/infoforguest");
+            
+            });
+    </script>
+    {%endif%}
 
 </html>

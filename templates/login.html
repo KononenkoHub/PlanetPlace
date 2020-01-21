@@ -1,0 +1,51 @@
+{% extends 'bootstrap/base.html'%}
+
+{% block title%}
+    {{title}}
+{%endblock%}
+
+{%block styles%}
+{{super()}}
+<link rel="stylesheet" href="{{url_for('static', filename='styles/styles.css')}}">
+{%endblock%}
+
+{%block body%}
+    <img class="bg-image" src="{{url_for('static', filename='images/bgimage.png')}}">
+    <div class="container main">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">  
+                <div class="page-header">
+                  <h1>JOIN FOR US  <small>log in</small></h1>
+                </div>
+                <form method="post" action="">
+                    {{form.hidden_tag()}}
+                    <div class="form-group row">
+                        <div class="col-10">
+                            {{form.email.label(class="col-2 col-form-label")}}
+                            {{form.email(class="form-control inputfield")}}
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-10">
+                            {{form.password.label(class="col-2 col-form-label")}} 
+                            {{form.password(class="form-control inputfield")}}
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-10">
+                            {{form.remember}}
+                            {{form.remember.label(class="col-2 col-form-label")}}
+                        </div>
+                    </div>
+                    <div class="form-group row form-bottom">
+                        <p> <a class="" href="{{url_for('registration')}}">You do not have an Account?</a></p>
+                        {{form.submit(class="btn btn-success btn-block")}}
+                    </div>
+                        
+                </form>  
+            </div>
+        </div>
+        
+    </div>
+    
+{%endblock%}

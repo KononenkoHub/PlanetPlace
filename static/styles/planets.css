@@ -1,0 +1,443 @@
+#SolarSystem{
+    position: relative;
+    margin: auto;
+    width: 600px;
+    height: 600px;
+    overflow: hidden;
+    padding: 50px;
+}
+
+#neptune{
+    position: absolute;
+    width: 550px;
+    height: 550px;
+    background-color:rgba(0,0,0,0);
+    border: 2px dotted white;
+    border-radius: 100%;
+    animation: solar 2090s linear infinite;
+}
+
+#neptune::after{
+    position: absolute;
+    width: 25px;
+    height: 22px;
+    border-radius: 100%;
+    background: #0000ff;
+    border-color: #00009d;
+    border-style: solid;
+    border-width: 4px 1px 1px 1px;
+    content: '';
+    left: 300px;
+    top: -13px;
+}
+
+#uranus{
+    position: absolute;
+    width: 490px;
+    height: 490px;
+    background-color:rgba(0,0,0,0);
+    border: 2px dotted white;
+    border-radius: 100%;
+    left: 80px;
+    top: 80px;
+    animation: solar 1070s linear infinite;
+
+}
+
+#uranus::after{
+    position: absolute;
+    width: 22px;
+    height: 20px;
+    border-radius: 100%;
+    background: #00f;
+    border-color: #00539d;
+    border-style: solid;
+    border-width: 4px 1px 1px 1px;
+    content: '';
+    left: 265px;
+    top: -10px;
+}
+
+
+#saturn{
+    position: absolute;
+    width: 445px;
+    height: 445px;
+    background-color:rgba(0,0,0,0);
+    border: 2px dotted white;
+    border-radius: 100%;
+    left: 105px;
+    top: 105px;
+    animation: solar 550s linear infinite;
+
+}
+
+#saturn::before{
+    position: absolute;
+    width: 20px;
+    height: 18px;
+    border-radius: 100%;
+    background: #0c0c0c;
+    border-color: #838838;
+    border-style: solid;
+    border-width: 5px 1px 1px 1px;
+    content: '';
+    left: 230px;
+    top: -11px;
+
+}
+
+
+#jupiter{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background-color:rgba(0,0,0,0);
+    border: 2px dotted white;
+    border-radius: 100%;
+    left: 130px;
+    top: 130px;
+    animation: solar 110s linear infinite;
+
+}
+
+#jupiter::after{
+    position: absolute;
+    width: 20px;
+    height: 16px;
+    border-radius: 100%;
+    background: #f60;
+    border-color: #630;
+    border-style: solid;
+    border-width: 6px 1px 1px 1px;
+    content: '';
+    left: 170px;
+    top: -10px;
+}
+
+
+#mars{
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    background-color:rgba(0,0,0,0);
+    border: 2px dotted white;
+    border-radius: 100%;
+    left: 155px;
+    top: 155px;
+    animation: solar 22s ease infinite;
+}
+
+#mars::after{
+    position: absolute;
+    width: 18px;
+    height: 16px;
+    border-radius: 100%;
+    background: #b00000;
+    border-color: #600;
+    border-style: solid;
+    border-width: 3px 1px 1px 1px;
+    content: '';
+    left: 100px;
+    top: 0px;
+}
+
+#earth{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color:rgba(0,0,0,0);
+    border: 2px dotted white;
+    border-radius: 100%;
+    left: 180px;
+    top: 180px;
+    animation: solar 12s linear infinite;
+}
+
+
+#earth::after{
+    position: absolute;
+    width: 18px;
+    height: 16px;
+    border-radius: 100%;
+    background: #0058b0;
+    border-color: #00366c;
+    border-style: solid;
+    border-width: 3px 1px 1px 1px;
+    content: '';
+    left: 75px;
+    top: 2px;
+}
+
+#venus{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background-color:rgba(0,0,0,0);
+    border: 2px dotted white;
+    border-radius: 100%;
+    left: 205px;
+    top: 205px;
+    animation: solar 6s linear infinite;
+}
+
+#venus::after{
+    position: absolute;
+    width: 18px;
+    height: 16px;
+    border-radius: 100%;
+    background: #ffd3a8;
+    border-color: #ffa589;
+    border-style: solid;
+    border-width: 4px 1px 1px 1px;
+    content: '';
+    left: 50px;
+    top: 5px;
+}
+
+#mercury{
+    position: absolute;
+    width: 185px;
+    height: 185px;
+    background-color:rgba(0,0,0,0);
+    border: 2px dotted white;
+    border-radius: 100%;
+    left: 235px;
+    top: 235px;
+    animation: solar 2s linear infinite;
+}
+
+#mercury::after{
+    position: absolute;
+    width: 15px;
+    height: 14px;
+    border-radius: 100%;
+    background: #713800;
+    border-color: #623100;
+    border-style: solid;
+    border-width: 2px 1px 1px 1px;
+    content: '';
+    left: 35px;
+    top: 5px;
+}
+
+#sun{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #f90;
+    left: 280px;
+    top: 280px;
+    border-radius: 100%;
+}
+
+
+@keyframes solar{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@media  screen and (max-width: 720px){
+    #SolarSystem{
+        padding-right: 0px;
+
+    }
+}
+
+
+@media  screen and (max-width: 580px){
+
+    #SolarSystem{
+        width: 500px;
+        height: 500px;
+        padding: 50px 20px;
+    }
+    #neptune{
+        width: 450px;
+        height: 450px;
+    }
+    #neptune::after{
+        left: 200px;
+        top: -16px;
+    }
+    #uranus{
+        width: 400px;
+        height: 400px;
+        left: 45px;
+        top: 75px;
+    }
+    #uranus::after{
+        left: 175px;
+        top: -15px;
+    }
+    #saturn{
+        width: 350px;
+        height: 350px;
+        left: 70px;
+        top: 100px;
+    }
+    #saturn::before{
+        left: 155px;
+        top: -13px;
+    }
+    #jupiter{
+        width: 300px;
+        height: 300px;
+        left: 95px;
+        top: 125px;
+    }
+    #jupiter::after{
+        left: 130px;
+        top: -12px;
+    }
+    #mars{
+        width: 250px;
+        height: 250px;
+        left: 120px;
+        top: 150px;
+    }
+    #mars::after{
+        left: 100px;
+        top: -10px;
+    }
+    #earth{
+        width: 200px;
+        height: 200px;
+        left: 145px;
+        top: 175px;
+    }
+    #earth::after{
+        left: 80px;
+        top: -10px;
+    }
+    #venus{
+        width: 150px;
+        height: 150px;
+        left: 170px;
+        top: 200px;
+    }
+    #venus::after{
+        left: 50px;
+        top: -10px;
+    }
+    #mercury{
+        width: 100px;
+        height: 100px;
+        left: 195px;
+        top: 225px;
+    }
+    #mercury::after{
+        left: 20px;
+        top: -4px;
+    }
+    #sun{
+        width: 50px;
+        height: 50px;
+        background-color: #f90;
+        left: 223px;
+        top: 250px;
+        border-radius: 100%;
+    }
+}
+
+
+@media  screen and (max-width: 350px){
+    .map{
+        overflow: scroll;
+    }
+    #SolarSystem{
+        width: 100%;
+        height: 100vh;
+        padding: 200px auto;
+    }
+    #neptune{
+        width: 300px;
+        height: 300px;
+    }
+    #neptune::after{
+        left: 200px;
+        top: -5px;
+    }
+    #uranus{
+        width: 270px;
+        height: 270px;
+        left: 35px;
+        top: 65px;
+    }
+    #uranus::after{
+        left: 175px;
+        top: -5px;
+    }
+    #saturn{
+        width: 240px;
+        height: 240px;
+        left: 50px;
+        top: 80px;
+    }
+    #saturn::before{
+        left: 155px;
+        top: -8px;
+    }
+    #jupiter{
+        width: 200px;
+        height: 200px;
+        left: 70px;
+        top: 100px;
+    }
+    #jupiter::after{
+        left: 130px;
+        top: -6px;
+    }
+    #mars{
+        width: 165px;
+        height: 165px;
+        left: 87px;
+        top: 117px;
+    }
+    #mars::after{
+        left: 100px;
+        top: -5px;
+    }
+    #earth{
+        width: 130px;
+        height: 130px;
+        left: 105px;
+        top: 135px;
+    }
+    #earth::after{
+        left: 80px;
+        top: -6px;
+    }
+    #venus{
+        width: 90px;
+        height: 90px;
+        left: 125px;
+        top: 155px;
+    }
+    #venus::after{
+        left: 50px;
+        top: -10px;
+    }
+    #mercury{
+        width: 60px;
+        height: 60px;
+        left: 140px;
+        top: 170px;
+    }
+    #mercury::after{
+        left: 20px;
+        top: -8px;
+    }
+    #sun{
+        width: 25px;
+        height: 25px;
+        background-color: #f90;
+        left: 160px;
+        top: 190px;
+        border-radius: 100%;
+    }
+}
